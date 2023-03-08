@@ -1,6 +1,6 @@
-# {your_name} Data Warehouse Project
+# Hoa  Data Warehouse Project
 
-Hello! I'm {your_name}, and this is my project to show my data warehouse skills.
+Hello! I'm Hoa, and this is my project to show my data warehouse skills.
 
 ## 🎯 Knowledge & techniques that I achieved
 
