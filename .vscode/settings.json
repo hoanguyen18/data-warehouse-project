@@ -103,7 +103,9 @@
         },
     },
     "terminal.integrated.defaultProfile.osx": "Custom MacOS",
-
+    "terminal.integrated.env.osx": {
+        "DBT_PROFILES_DIR": "."
+    },
 
 
     // DBT POWER USER
