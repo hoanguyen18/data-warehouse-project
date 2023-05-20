@@ -34,6 +34,7 @@ fact_line.sales_order_line_key,
 fact_line.sales_order_key,
 fact_line.product_key,
 fact_header.customer_key,
+fact_header.picked_by_person_key,
 fact_line.quantity,
 fact_line.unit_price,
 fact_line.gross_amount
