@@ -38,9 +38,9 @@ select
 dim_customer.customer_key,
 dim_customer.customer_name,
 dim_customer.customer_category_key,
-dim_customer_category.customer_category_name,
+coalesce(dim_customer_category.customer_category_name, 'Invalid') as customer_category_name,
 dim_customer.buying_group_key,
-dim_buying_group.buying_group_name
+coalesce(dim_buying_group.buying_group_name, 'Invalid') as buying_group_name,
 from dim_customer__cast_type as dim_customer
 left join {{ref('stg_dim_customer_category')}} as dim_customer_category 
 on dim_customer.customer_category_key = dim_customer_category.customer_category_key
