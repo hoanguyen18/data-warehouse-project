@@ -32,7 +32,7 @@ dim_product__convert_boolean as (
 -- nen ghi ro cac cot, thay vi dung * de nguoi doc hieu ro
 select dim_product.product_key,
 dim_product.product_name,
-dim_product.brand_name, 
+coalesce(dim_product.brand_name, 'Undefined') as brand_name, 
 dim_product.supplier_key,
 dim_supplier.supplier_name,
 dim_product.is_chiller_stock
