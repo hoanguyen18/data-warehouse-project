@@ -1,0 +1,20 @@
+Description: This table contains information about product
+Type: Dimension
+-- cach 1
+columns:
+  - product_key:
+      description: Primary key of dim_product
+      type: INTEGER
+
+  - product_name:
+      description: product name
+      type: STRING
+-- cach 2
+ columns:
+  - name: product_key
+      description: PK of dim_product
+      type: INTEGER
+
+  - name: product_name
+      description: product name
+      type: STRING
