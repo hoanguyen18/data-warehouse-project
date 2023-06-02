@@ -1,20 +1,12 @@
-Description: This table contains information about product
-Type: Dimension
--- cach 1
-columns:
-  - product_key:
-      description: Primary key of dim_product
-      type: INTEGER
+version: 2
 
-  - product_name:
-      description: product name
-      type: STRING
--- cach 2
- columns:
-  - name: product_key
-      description: PK of dim_product
-      type: INTEGER
+models:
+  - name: dim_product
+    columns:
+      - name: product_key
+        tests:
+          - not_null
 
-  - name: product_name
-      description: product name
-      type: STRING
+      - name: product_name
+        tests:
+          - not_null
